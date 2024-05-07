@@ -1,0 +1,15 @@
+.header{
+  background: url('./Food-Hub.webp') no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+/* .header h2{
+  font-size: max(4.5vw, 22px);
+}
+
+.header p {
+  font-size: max(1vw, 13px);
+} */
