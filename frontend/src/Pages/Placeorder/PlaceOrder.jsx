@@ -3,7 +3,7 @@ import { StoreContext } from '../../Context/StoreContex'
 import axios from 'axios'
 
 
-const PlaceOrder = ({url}) => {
+const PlaceOrder = () => {
   const [data, setData] = useState({
     firstName: "",
     lastName: "",

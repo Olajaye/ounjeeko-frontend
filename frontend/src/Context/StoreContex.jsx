@@ -23,7 +23,9 @@ const StoreContextProvider = ({ children }) => {
      }
     }
 
-    loadData()
+     loadData()
+
+    
   }, [])
 
  
@@ -55,16 +57,17 @@ const StoreContextProvider = ({ children }) => {
 
   const loadCartData = async (token) => {
     const response = await axios.post(`${url}/api/cart/get`, {}, { headers: { token } })
-    setCartItems(response.data.cartData)
+    setCartItems(response.data.cartData )
   }
 
   const getTotalCartAmount = () => {
     let totalAmount = 0 
     for (const item in cartItems) {
-
       if (cartItems[item] > 0) {
+       
         let itemInfo = food_list.find((product) => product._id === item)
-        totalAmount += itemInfo.price * cartItems[item]
+        totalAmount = totalAmount + itemInfo.price * cartItems[item]
+        // console.log(totalAmount)
       }
       
     }
