@@ -3,7 +3,7 @@ import { StoreContext } from '../../Context/StoreContex'
 import axios from 'axios'
 
 
-const PlaceOrder = () => {
+const PlaceOrder = ({url}) => {
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -50,10 +50,7 @@ const PlaceOrder = () => {
 
     
 
-    let response = await axios.post(url + "/api/order/place", orderData, { headers: { token } })
-    
-    
-    console.log(response)
+    let response = await axios.post(`${url}/api/order/place`, orderData, { headers: { token } })
     
     if (response.data.success) {
       const { session_url } = response.data;
