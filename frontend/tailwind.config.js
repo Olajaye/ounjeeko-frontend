@@ -23,6 +23,10 @@ export default {
     gridTemplateColumns: {
       'footer': "2fr 1fr 1fr",
       'cart': "1fr 1.5fr 1fr 1fr 1fr 0.5fr",
+    },
+    backgroundImage: {
+      'headerImg': "url('./assets/Food-Hub.webp')",
+        
     }
     
   },
