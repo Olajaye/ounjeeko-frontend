@@ -5,7 +5,7 @@ import { fadeIn } from "../../utils/motion"
 
 const Header = () => {
   return (
-    <header className="header h-[38vw] mt-4 mb-5 my-0 sm:my-8 mx-auto">
+    <header className="header h-[38vw] mt-4 mb-5 my-0 sm:my-8 mx-auto bg-tomato">
       <motion.div
         variants={fadeIn}
         initial="hidden"
