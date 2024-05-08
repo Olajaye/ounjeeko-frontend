@@ -12,7 +12,7 @@ const AddProduct = ({ url }) => {
     name: "",
     description: "", 
     price: "",
-    category:"Salad"
+    category:"Rice"
   })
 
   
