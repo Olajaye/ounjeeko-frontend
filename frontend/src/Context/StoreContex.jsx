@@ -30,8 +30,15 @@ const StoreContextProvider = ({ children }) => {
 
  
   const fetchFoodList = async () => {
+    
     const response = await axios.get(`${url}/api/food/list`)
-    setFoodList(response.data.data)
+    console.log(response.data.data)
+    const res = await response.data.data.map((item) => {
+      const {image}= item
+      return {...item, image: `${url}/images/${image}`}
+    })
+    
+    setFoodList(res)
   }
 
   const addToCart = async (itemId) => {
