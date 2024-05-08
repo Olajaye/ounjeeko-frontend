@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Out fit;
+  scroll-behavior: smooth;
 }
 body{
  width: 100%;

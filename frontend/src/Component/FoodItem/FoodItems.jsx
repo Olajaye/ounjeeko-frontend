@@ -19,7 +19,7 @@ const FoodItems = ({ id, name, description, price, image }) => {
       style={{boxShadow: "0px 0px 10px #00000015", transition: "0.3"}}
     >
       <div className='relative'>
-        <img src={url+"/images/"+image} alt={name} className='w-[100%] h-60 rounded-2xl' />
+        <img src={`${url}/images/${image}`} alt={name} className='w-[100%] h-60 rounded-2xl' />
         {/* Adding and removing Cart Itmes */}
         {!cartItems[id] ?
           <img src={assets.add_icon_white} onClick={() => addToCart(id)} alt='' className='w-9 absolute bottom-4 right-4 cursor-pointer rounded-full' /> : <div className='flex items-center gap-2 p-1 absolute bottom-4 right-4 rounded-full bg-white'>

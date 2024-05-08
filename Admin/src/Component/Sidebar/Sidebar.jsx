@@ -7,7 +7,7 @@ const Sidebar = () => {
   const navlinkStyle = ({ isActive, isPending }) =>
   [
     isPending ? "pending" : "flex items-center gap-3 border border-[#a9a9a9] border-e-0 py-2 px-3 cursor-pointer rounded-s-lg",
-    isActive ? "bg-[#fff0ed] border-tomato" : "",
+    isActive ? "bg-[#464daf6c] border-tomato" : "",
   ].join(" ")
   return (
     <section className='w-[18%] min-h-[100vh] border border-[#a9a9a9] border-t-0'>

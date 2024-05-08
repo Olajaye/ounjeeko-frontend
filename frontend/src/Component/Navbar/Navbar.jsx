@@ -24,22 +24,22 @@ const Navbar = ({ setShowLogin }) => {
      
 
       <ul className='hidden md:flex gap-[20px] text-primary-100 text-[18px]'>
-        <li
+        <a href='#home'
           className={`${menu === "home" ? active : ""} cursor-pointer`}
           onMouseOver={() => setMenu("home")}
-        >Home</li>
-        <li
+        >Home</a>
+        <a href='#explore-menu'
           className={`${menu === "menu" ? active : ""} cursor-pointer`}
           onMouseOver={() => setMenu("menu")}
-        >Menu</li>
-        <li
+        >Menu</a>
+        <a href='#app-download'
           className={`${menu === "mobile-app" ? active : ""}  cursor-pointer`}
           onMouseOver={() => setMenu("mobile-app")}
-        >Mobile-app</li>
-        <li
+        >Mobile-app</a>
+        <a href='#footer'
           className={`${menu === "contact-us" ? active : ""} cursor-pointer`}
           onMouseOver={() => setMenu("contact-us")}
-        >Contact Us</li>
+        >Contact Us</a>
       </ul>
 
       <div className='flex items-center gap-5 sm:gap-10'>
@@ -54,7 +54,7 @@ const Navbar = ({ setShowLogin }) => {
               onClick={() => setShowLogin(true)}
               className='bg-transparent text-[16px] text-primary-100 border-2 border-tomato px-[7px] sm:py-1 sm:px-[30px] rounded-full transition duration-500 hover:bg-[#fff4f2]'>Sign in</button>
           ) : (
-            <div className='relative'>
+            <div className='relative cursor-pointer'>
               <img
                 src={assets.profile_icon}
                 alt=""
@@ -62,19 +62,20 @@ const Navbar = ({ setShowLogin }) => {
                 onMouseOut={() => setShowDropDown(false)}
               />
               <ul
-                className={showDropDown ? ("flex flex-col gap-1 py-2 px-1 absolute right-0 w-28 z-10 border-2 border-tomato bg-[#6b73e66c]") : ('hidden ')}
+                className={showDropDown ? ("flex flex-col gap-1 py-2 px-1 absolute right-0 w-28 z-10 rounded-lg bg-[#464daf6c]") : ('hidden ')}
                 onMouseOver={() => setShowDropDown(true)}
                 onMouseOut={() => setShowDropDown(false)}
               >
-                <li className='flex items-center cursor-pointer gap-2'>
+                {/* <li className='flex items-center cursor-pointer gap-2'>
                   <img src={assets.bag_icon} alt=""  className='w-6'/>
                   <p className='hover:text-tomato font-extrabold'>Orders</p>
                 </li>
-                <hr />
+                <hr /> */}
                 <li onClick={logOut} className='flex items-center cursor-pointer gap-2'>
-                  <img src={assets.logout_icon} alt="" className='w-6' />
+                  <img src={assets.logout} alt="" className='w-6 text-tomato' />
                   <p className='hover:text-tomato font-extrabold'>Logout</p>
                 </li>
+                <hr />
               </ul>
             </div>
           )}

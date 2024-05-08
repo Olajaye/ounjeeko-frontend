@@ -25,7 +25,7 @@ export default {
       'cart': "1fr 1.5fr 1fr 1fr 1fr 0.5fr",
     },
     backgroundImage: {
-      'headerImg': "url('./assets/Food-Hub.webp')",
+      'headerImg': "url('./assets/excitedMarket.webp')",
         
     }
     

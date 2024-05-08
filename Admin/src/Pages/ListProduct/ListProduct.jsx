@@ -33,7 +33,7 @@ const ListProduct = ({url}) => {
 
   const flexCol = "flex flex-col"
   return (
-    <div className={`${flexCol}`}>
+    <div className={`${flexCol} mt-10 ms-10 gap-4`}>
       <p>All Food List</p>
       <div>
 

@@ -1,9 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { StoreContext } from '../../Context/StoreContex'
 import axios from 'axios'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 
 const PlaceOrder = () => {
+  
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -48,16 +52,18 @@ const PlaceOrder = () => {
       amount: getTotalCartAmount() + 2
     }
 
-    
+    toast("Sorry Payment issue will be fixed soon")
 
+    /*
     let response = await axios.post(`${url}/api/order/place`, orderData, { headers: { token } })
     
     if (response.data.success) {
       const { session_url } = response.data;
-      window.location.replace(session_url)
+     
+     // window.location.replace(session_url)
     } else {
       alert(response.data.message)
-    }
+    }*/
   }
  
   return (

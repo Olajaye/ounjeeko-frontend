@@ -2,6 +2,8 @@ import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
+
+
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
@@ -58,9 +60,15 @@ import rating_starts from './rating_starts.png'
 import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
+import logout from './icons-logout.png'
 import parcel_icon from './parcel_icon.png'
 import ounjeEko from './ounjeEko3.png'
 import Food_Hub from './Food-Hub.webp'
+import rice from './rice.jpg'
+import gari from './ijebu-garri.jpg'
+import perish from './vegetables.jpeg'
+import beans from './honey-beans.webp'
+
 
 export const assets = {
     logo,
@@ -83,17 +91,27 @@ export const assets = {
     bag_icon,
     parcel_icon,
     ounjeEko,
-    Food_Hub
+    Food_Hub,
+    logout
 }
 
 export const menu_list = [
+   
     {
-        menu_name: "Salad",
-        menu_image: menu_1
+        menu_name: "Rice",
+        menu_image: rice
+    },
+     {
+        menu_name: "Garri",
+        menu_image: gari
     },
     {
-        menu_name: "Rolls",
-        menu_image: menu_2
+        menu_name: "Beans",
+        menu_image: beans
+    },
+    {
+        menu_name: "Perishables",
+        menu_image: perish
     },
     {
         menu_name: "Deserts",
@@ -108,16 +126,8 @@ export const menu_list = [
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
-        menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
+        menu_name: "Rolls",
+        menu_image: menu_2
     }]
 
 export const food_list = [

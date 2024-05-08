@@ -50,7 +50,7 @@ const AddProduct = ({ url }) => {
 
 
   return (
-    <div className='w-[70%] text-[#6d6d6d]'>
+    <div className='w-[100%] sm:w-[70%] text-[#6d6d6d]'>
       <form onSubmit={onSubmitHandle} className={`${flexCol} mt-10 ms-10 gap-4`}>
 
         <div className={`${flexCol} gap-2`}>
@@ -62,7 +62,7 @@ const AddProduct = ({ url }) => {
         </div>
 
         {/* add product name */}
-        <div className={`${flexCol} w-[40%] `}>
+        <div className={`${flexCol} w-[70%] sm:w-[50%]`}>
           <p>Product name</p>
           <input
             onChange={OnChangeHandler}
@@ -73,7 +73,7 @@ const AddProduct = ({ url }) => {
             className='p-2 border' />
         </div>
 
-        <div className={`${flexCol} w-[40%] `}>
+        <div className={`${flexCol} w-[70%] sm:w-[50%]`}>
           <p>Product description</p>
           <textarea
             onChange={OnChangeHandler}
@@ -81,22 +81,22 @@ const AddProduct = ({ url }) => {
             name="description" rows="6" placeholder='Write content here' className='p-2 border'></textarea>
         </div>
 
-        <div className='flex gap-7'>
+        <div className='sm:flex gap-7'>
           <div className={`${flexCol}`}>
             <p>Product category</p>
             <select
               onChange={OnChangeHandler}
-              
               name="category"
               className='w-[120px] p-2 border'>
-              <option value="Salad">Salad</option>
-              <option value="Rolls">Rolls</option>
-              <option value="Deserts">Deserts </option>
+              <option value="Rice">Rice</option>
+              <option value="Garri">Garri</option>
+              <option value="Beans">Beans</option>
+              <option value="Perishables">Perishables</option>
               <option value="Sandwich">Sandwich</option>
               <option value="Cake">Cake</option>
-              <option value="Pure Veg">Pure Veg</option>
-              <option value="Pasta">Pasta</option>
-              <option value="Noodles">Noodles</option>
+              <option value="Deserts">Deserts</option>
+              <option value="Rolls">Rolls</option>
+             
             </select>
           </div>
 
